@@ -5,29 +5,34 @@
 }
 
 body {
-  font-family: sans-serif;
+  margin: 50px;
+  font-family: "Montserat", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  background-color: #333;
 }
 
-h1 {
-  font-size: 3rem;
+.title {
+  font-weight: bold;
+  transition: color 1s;
+}
+
+li:nth-child(even) {
+  color: aqua;
+}
+
+span:first-of-type {
+  color: red;
+}
+
+.test p:first-child {
   color: gold;
 }
 
-.circle {
-  margin: 30px auto;
-  width: 100px;
-  height: 100px;
-  background-color: lime;
-  border: 3px solid black;
-  border-radius: 50%;
-}
-
-h2 {
-  font-size: 2.4em;
+.test p:last-child {
   color: gold;
 }
 
-section {
-  height: 25vh;
-  text-align: center;
+.title:hover {
+  color: violet;
 }/*# sourceMappingURL=style.css.map */

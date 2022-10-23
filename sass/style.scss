@@ -1,39 +1,35 @@
 @use './reset';
 
-@mixin circle {
-    margin: 30px auto;
-    width: 100px;
-    height: 100px;
-    background-color: lime;
-    border: 3px solid black;
-    border-radius: 50%;
-}
-
-$heading-color: gold;
-$oddSection: deepskyblue;
-$evenSection: dodgerblue;
- 
 body {
-    font-family: sans-serif;
+	margin: 50px;
+	font-family: 'Montserat', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    background-color: #333;
 }
- 
-h1 {
-    font-size: 3rem;
-    color: $heading-color;
-}
- 
-.circle {
-    @include circle
-}
- 
-h2 {
-    font-size: 2.4em;
-    color: $heading-color;
-}
- 
-section {
-    height: 25vh;
-    text-align: center;
-}
- 
 
+.title {
+    font-weight: bold;
+    transition: color 1s;
+}
+
+li:nth-child(even) {
+    color: aqua;
+}
+
+
+span:first-of-type {
+    color: red;
+}
+
+.test p:first-child {
+    color: gold;
+}
+
+.test p:last-child {
+    color: gold;
+}
+
+.title:hover {
+    color: violet;
+}
