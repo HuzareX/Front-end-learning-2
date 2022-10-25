@@ -5,34 +5,35 @@
 }
 
 body {
-  margin: 50px;
-  font-family: "Montserat", sans-serif;
-  font-size: 30px;
-  color: #fff;
+  font-family: "Montserrat", sans-serif;
   background-color: #333;
 }
 
-.title {
-  font-weight: bold;
-  transition: color 1s;
+section {
+  background-color: rgb(29, 25, 25);
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-li:nth-child(even) {
-  color: aqua;
+.square {
+  width: 20%;
+  text-align: center;
 }
 
-span:first-of-type {
-  color: red;
+.one {
+  background-color: gold;
 }
 
-.test p:first-child {
-  color: gold;
+.two {
+  background-color: aqua;
 }
 
-.test p:last-child {
-  color: gold;
+.three {
+  background-color: burlywood;
 }
 
-.title:hover {
-  color: violet;
+.four {
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */
