@@ -5,21 +5,69 @@
 }
 
 body {
+  margin: 50px;
   font-family: "Montserrat", sans-serif;
   background-color: #333;
+  font-size: 40px;
 }
 
 section {
-  background-color: rgb(29, 25, 25);
-  height: 600px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  margin: 20px 0;
+  height: 300px;
+  border: 5px solid black;
 }
 
 .square {
-  width: 20%;
+  width: 200px;
   text-align: center;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+}
+.first .two {
+  flex-grow: 1;
+}
+.first .four {
+  flex-grow: 1;
+}
+
+.second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.third {
+  display: flex;
+}
+.third .one {
+  order: 2;
+  flex-grow: 1;
+}
+.third .two {
+  order: 1;
+}
+.third .three {
+  order: -2;
+}
+.third .four {
+  order: -1;
+  flex-grow: 3;
+}
+
+.fourth {
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+.fourth .two {
+  align-self: flex-start;
+}
+.fourth .three {
+  align-self: center;
 }
 
 .one {
@@ -27,13 +75,13 @@ section {
 }
 
 .two {
-  background-color: aqua;
+  background-color: lime;
 }
 
 .three {
-  background-color: burlywood;
+  background-color: royalblue;
 }
 
 .four {
-  background-color: red;
+  background-color: tomato;
 }/*# sourceMappingURL=style.css.map */

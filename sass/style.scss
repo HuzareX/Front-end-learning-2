@@ -1,21 +1,69 @@
 @use './reset';
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #333;
+	margin: 50px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #333;
+	font-size: 40px;
 }
 
 section {
-	background-color: rgb(29, 25, 25);
-	height: 600px;
 	display: flex;
-	flex-direction: column;
-	align-items:flex-end
+	margin: 20px 0;
+	height: 300px;
+	border: 5px solid black;
 }
 
 .square {
-	width: 20%;
+	width: 200px;
 	text-align: center;
+}
+
+.first {
+	display: flex;
+	flex-direction: column;
+	.two {
+		flex-grow: 1;
+	}
+	.four {
+		flex-grow: 1;
+	}
+}
+
+.second {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.third {
+	display: flex;
+	.one {
+		order: 2;
+		flex-grow: 1;
+	}
+	.two {
+		order: 1;
+	}
+	.three {
+		order: -2;
+	}
+	.four {
+		order: -1;
+		flex-grow: 3;
+	}
+}
+
+.fourth {
+	flex-direction: row-reverse;
+	align-items: flex-end;
+		.two {
+			align-self: flex-start;
+		}
+		.three {
+			align-self: center;
+		}
 }
 
 .one {
@@ -23,13 +71,13 @@ section {
 }
 
 .two {
-	background-color: aqua;
+	background-color: lime;
 }
 
 .three {
-	background-color: burlywood;
+	background-color: royalblue;
 }
 
 .four {
-	background-color: red;
+	background-color: tomato;
 }
