@@ -1,83 +1,39 @@
 @use './reset';
 
 body {
-	margin: 50px;
-	font-family: 'Montserrat', sans-serif;
-	background-color: #333;
-	font-size: 40px;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
 }
 
-section {
-	display: flex;
-	margin: 20px 0;
-	height: 300px;
-	border: 5px solid black;
+.buttons {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
 }
 
-.square {
-	width: 200px;
-	text-align: center;
+.text {
+    margin-top: 200px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
 }
 
-.first {
-	display: flex;
-	flex-direction: column;
-	.two {
-		flex-grow: 1;
-	}
-	.four {
-		flex-grow: 1;
-	}
+button {
+    margin: 0 30px;
+    padding: 10px 30px;
+    background: none;
+    border-radius: 5px;
+    border: 2px solid #00cfff;
+    color: #00cfff;
+    box-shadow: 3px 3px 10px #00cfff;
+    font-size: 36px;
+    transition: color .3s, box-shadow .3s;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-.second {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.third {
-	display: flex;
-	.one {
-		order: 2;
-		flex-grow: 1;
-	}
-	.two {
-		order: 1;
-	}
-	.three {
-		order: -2;
-	}
-	.four {
-		order: -1;
-		flex-grow: 3;
-	}
-}
-
-.fourth {
-	flex-direction: row-reverse;
-	align-items: flex-end;
-		.two {
-			align-self: flex-start;
-		}
-		.three {
-			align-self: center;
-		}
-}
-
-.one {
-	background-color: gold;
-}
-
-.two {
-	background-color: lime;
-}
-
-.three {
-	background-color: royalblue;
-}
-
-.four {
-	background-color: tomato;
+button:hover {
+    color: #00ffae;
+    box-shadow: 3px 3px 10px #00ffae;
 }
