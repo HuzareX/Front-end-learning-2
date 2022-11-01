@@ -1,39 +1,97 @@
-@use './reset';
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
 body {
-    height: 100vh;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #333;
+	background-color: rgb(28, 43, 46);
+	font-family: 'Oxygen', sans-serif;
+}
+// NAV
+nav {
+	.nav-link {
+		color: white;
+		text-transform: uppercase;
+		transition: color 0.5s, text-shadow 0.5s, font-size 0.5s, font-weight 0.2s;
+	}
+
+	.nav-link:hover {
+		color: aqua;
+		text-shadow: 0px 0px 50px rgba(76, 220, 82, 1);
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.navbar-brand {
+		font-weight: 700;
+		font-size: 25px;
+		color: white;
+	}
+
+	.navbar-toggler {
+		color: white;
+		padding: 20px;
+	}
 }
 
-.buttons {
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
+.fa-brands {
+	padding: 10px;
+	font-size: 60px;
+	color: white;
+}
+// @media (min-width: 992px) {
+//     nav {
+//         background-image: url(../img/nav-big.jpg);
+//         background-repeat: no-repeat;
+//         background-size:cover;
+//         background-position: center;
+//     }
+// }
+
+// HEAD
+header {
+	.hero-bg {
+		position: relative;
+		height: 100vh;
+		background-image: url(../img/nav-small.jpg);
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+        z-index: -2;
+	}
+
+	.hero-shadow {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+        z-index: -10;
+	}
+
+	.hero-text {
+        display: flex;
+		justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+        color: white;
+        z-index: 5;
+            h1{
+                span {
+                    color: aqua;
+                    font-weight: bold;
+                    text-shadow: 0px 0px 15px rgba(128, 220, 236, 1)
+                }
+            }
+	}
 }
 
-.text {
-    margin-top: 200px;
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
-}
-
-button {
-    margin: 0 30px;
-    padding: 10px 30px;
-    background: none;
-    border-radius: 5px;
-    border: 2px solid #00cfff;
-    color: #00cfff;
-    box-shadow: 3px 3px 10px #00cfff;
-    font-size: 36px;
-    transition: color .3s, box-shadow .3s;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-button:hover {
-    color: #00ffae;
-    box-shadow: 3px 3px 10px #00ffae;
+@media (min-width: 992px) {
+    .hero-bg {
+        background-image: url(../img/nav-big.jpg);
+    }
 }
