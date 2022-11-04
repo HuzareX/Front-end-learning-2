@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function addShadow() {
 
-        if (window.scrollY >= 100) {
+        if (window.scrollY >= 1) {
             nav.classList.add ('shadow-bg')
         } else {
             nav.classList.remove ('shadow-bg')

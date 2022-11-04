@@ -1,18 +1,22 @@
-*,
+@use "../sass/colors" as color;
+
+* ,
 *::before,
 *::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+html {
+	scroll-padding-top: 82px;
+}
 
 body {
 	background-color: rgb(28, 43, 46);
 	font-family: 'Oxygen', sans-serif;
-	h1 {
-	}
+
 	.logo {
-		color: aqua;
+		color: color.$main-color;
 		font-weight: bold;
 		text-shadow: 0px 0px 15px rgba(128, 220, 236, 1);
 	}
@@ -25,13 +29,13 @@ body {
 		transition: background-color 0.8s ;
 		z-index: 1;
 		.nav-link {
-			color: white;
+			color: color.$text-color;
 			text-transform: uppercase;
 			transition: color 0.5s, text-shadow 0.5s, font-size 0.5s, font-weight 0.2s;
 		}
 
 		.nav-link:hover {
-			color: aqua;
+			color: color.$main-color;
 			text-shadow: 0px 0px 50px rgba(76, 220, 82, 1);
 			font-size: 20px;
 			font-weight: bold;
@@ -40,13 +44,13 @@ body {
 		.navbar-brand {
 			font-weight: 700;
 			font-size: 25px;
-			color: white;
+			color: color.$text-color;
 		}
 
 		.navbar-toggler {
-			color: white;
+			color: color.$text-color;
 			padding: 20px;
-			color: aqua;
+			color: color.$main-color;
 			font-weight: bold;
 			text-shadow: 0px 0px 15px rgba(128, 220, 236, 1);
 		}
@@ -55,7 +59,7 @@ body {
 	.fa-brands {
 		padding: 10px;
 		font-size: 60px;
-		color: white;
+		color: color.$text-color;
 	}
 	// @media (min-width: 992px) {
 	//     nav {
@@ -81,11 +85,11 @@ body {
 				top: 90%;
 				left: 50%;
 				transform: translateX(-50%);
-				color: aqua;
+				color: color.$main-color;
 				font-size: 50px;
 			}
 		}
-
+		
 		.hero-shadow {
 			position: absolute;
 			height: 100%;
@@ -101,15 +105,50 @@ body {
 		flex-direction: column;
 		text-align: center;
 		height: 100%;
-		color: white;
+		color: color.$text-color;
 		z-index: 5;
 		.btn-outline-info {
-			border: 3px solid aqua;
-			color: aqua;
+			border: 3px solid color.$main-color;
+			color: color.$main-color;
 		}
 	}
 }
 
+// ABOUTUS
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.underline {
+	width: 60px;
+	height: 5px;
+	background-color: color.$main-color;
+	margin: 0 auto ;
+
+}
+
+.aboutus {
+	i {
+		margin-top: 10px;
+		font-size: 50px;	
+	}
+
+	.aboutus-card-title {
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+	.aboutus-hover{
+		transition: color 0.3s;
+	}
+	.aboutus-hover:hover {
+		color: color.$main-color;
+	}
+}
 
 @media (min-width: 375px) {
 	header h1 {
@@ -135,7 +174,7 @@ body {
 		}
 		nav {
 			.nav-link:hover {
-				color: aqua;
+				color: color.$main-color;
 				text-shadow: 0px 0px 50px rgba(76, 220, 82, 1);
 				font-size: 30px;
 				font-weight: bold;
@@ -154,7 +193,7 @@ body {
 
 		nav {
 			.nav-link:hover {
-				color: aqua;
+				color: color.$main-color;
 				text-shadow: 0px 0px 50px rgba(76, 220, 82, 1);
 				font-size: 20px;
 				font-weight: bold;
