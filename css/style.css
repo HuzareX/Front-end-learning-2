@@ -102,7 +102,7 @@ h2 {
   width: 60px;
   height: 5px;
   background-color: rgb(0, 255, 255);
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .aboutus i {
@@ -121,6 +121,35 @@ h2 {
 }
 .aboutus .aboutus-hover:hover {
   color: rgb(0, 255, 255);
+}
+
+.aboutus-2 .hero-bg {
+  position: relative;
+  background-image: url(../img/apps-small.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+.aboutus-2 .hero-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -5;
+}
+.aboutus-2 .container i {
+  margin-top: 10px;
+  font-size: 50px;
+  color: white;
+}
+.aboutus-2 .container h2 {
+  padding-top: 20px;
+  color: white;
+}
+.aboutus-2 .container p {
+  padding: 20px;
+  color: white;
 }
 
 @media (min-width: 375px) {
@@ -154,7 +183,7 @@ h2 {
     font-size: 50px;
   }
 }
-@media (min-width: 996px) {
+@media (min-width: 992px) {
   body nav .nav-link:hover {
     color: rgb(0, 255, 255);
     text-shadow: 0px 0px 50px rgb(76, 220, 82);
@@ -167,6 +196,9 @@ h2 {
   body nav .navbar-brand {
     position: absolute;
     left: 1%;
+  }
+  body .aboutus-2 .hero-bg {
+    background-image: url(../img/apps-big.jpg);
   }
 }
 @media (min-width: 1200px) {
