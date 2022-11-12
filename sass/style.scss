@@ -184,6 +184,71 @@ h2 {
 	}
 }
 
+.portfolio {
+	.carousel-item {
+		position: relative;
+		height: 500px;
+	}
+
+	.carousel-caption {
+		position: absolute;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.8);	
+	}
+
+	.carousel-indicators {
+		padding-bottom: 10px;
+	}
+	
+	.card-group {
+	
+		img {
+			height: 300px;
+		}
+	}
+}
+
+.prices {
+	.price-box{
+		margin: 20px 10px;
+		padding: 20px;
+		background-color: rgb(196, 196, 196);
+		border-radius: 2px solid black;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+		transition: transform 0.4s;
+		h3{
+			color: blue;
+		}
+		p {
+			span {
+				font-weight: bold;
+			}
+		}
+		button {
+			padding: 10px 20px;
+			text-transform: uppercase;
+		
+		}
+	}
+	.price-tag {
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.price-box:hover {
+		transform: scale(1.1);
+	}
+
+	.offer {
+		padding: 20px 0;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+
 
 
 @media (min-width: 375px) {
@@ -199,6 +264,21 @@ h2 {
 		}
 	}
 	body {
+		.aboutus{
+			h2 {
+				font-size: 40px;
+			}
+			.aboutus-card-text {
+				font-size: 30px;
+			}
+			.aboutus-card-title {
+				font-size: 30px;
+				font-weight: bold;
+				margin: 20px;
+
+			}
+
+		}
 		.hero-text {
 			font-size: 30px;
 		}
@@ -244,6 +324,12 @@ h2 {
 		.aboutus-2 {
 			.hero-bg {
 				background-image: url(../img/apps-big.jpg);
+			}
+		}
+
+		.prices {
+			.offer {
+				font-size: 20px;
 			}
 		}
 	

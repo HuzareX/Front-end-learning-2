@@ -152,6 +152,55 @@ h2 {
   color: white;
 }
 
+.portfolio .carousel-item {
+  position: relative;
+  height: 500px;
+}
+.portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 10px;
+}
+.portfolio .card-group img {
+  height: 300px;
+}
+
+.prices .price-box {
+  margin: 20px 10px;
+  padding: 20px;
+  background-color: rgb(196, 196, 196);
+  border-radius: 2px solid black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+  transition: transform 0.4s;
+}
+.prices .price-box h3 {
+  color: blue;
+}
+.prices .price-box p span {
+  font-weight: bold;
+}
+.prices .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.prices .price-tag {
+  font-size: 30px;
+  font-weight: bold;
+}
+.prices .price-box:hover {
+  transform: scale(1.1);
+}
+.prices .offer {
+  padding: 20px 0;
+}
+.prices .offer a {
+  text-decoration: none;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 50px;
@@ -160,6 +209,17 @@ h2 {
 @media (min-width: 768px) {
   header h1 {
     font-size: 70px;
+  }
+  body .aboutus h2 {
+    font-size: 40px;
+  }
+  body .aboutus .aboutus-card-text {
+    font-size: 30px;
+  }
+  body .aboutus .aboutus-card-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
   }
   body .hero-text {
     font-size: 30px;
@@ -199,6 +259,9 @@ h2 {
   }
   body .aboutus-2 .hero-bg {
     background-image: url(../img/apps-big.jpg);
+  }
+  body .prices .offer {
+    font-size: 20px;
   }
 }
 @media (min-width: 1200px) {
