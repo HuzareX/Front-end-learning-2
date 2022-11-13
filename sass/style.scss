@@ -194,15 +194,14 @@ h2 {
 		position: absolute;
 		left: 0;
 		right: 0;
-		background-color: rgba(0, 0, 0, 0.8);	
+		background-color: rgba(0, 0, 0, 0.8);
 	}
 
 	.carousel-indicators {
 		padding-bottom: 10px;
 	}
-	
+
 	.card-group {
-	
 		img {
 			height: 300px;
 		}
@@ -210,14 +209,14 @@ h2 {
 }
 
 .prices {
-	.price-box{
+	.price-box {
 		margin: 20px 10px;
 		padding: 20px;
 		background-color: rgb(196, 196, 196);
 		border-radius: 2px solid black;
 		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
 		transition: transform 0.4s;
-		h3{
+		h3 {
 			color: blue;
 		}
 		p {
@@ -228,7 +227,6 @@ h2 {
 		button {
 			padding: 10px 20px;
 			text-transform: uppercase;
-		
 		}
 	}
 	.price-tag {
@@ -248,8 +246,49 @@ h2 {
 	}
 }
 
+.team {
+	position: relative;
+	background-image: url(../img/team/sala-small.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
 
+	h2 {
+		color: white;
+	}
+	.shadow-bg {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+		top: 0;
+		z-index: -5;
+	}
 
+	.card {
+		transition: transform 0.3s;
+		img {
+			height: 300px;
+			object-fit: cover;
+
+		}
+
+		i {
+			padding: 10px;
+		}
+
+		.card-title {
+			margin: 10px 0;
+			text-transform: uppercase;
+			text-align: center;
+		}
+	}
+
+	.card:hover {
+		transform: scale(.96);
+	}
+}
 
 @media (min-width: 375px) {
 	header h1 {
@@ -264,7 +303,7 @@ h2 {
 		}
 	}
 	body {
-		.aboutus{
+		.aboutus {
 			h2 {
 				font-size: 40px;
 			}
@@ -275,9 +314,7 @@ h2 {
 				font-size: 30px;
 				font-weight: bold;
 				margin: 20px;
-
 			}
-
 		}
 		.hero-text {
 			font-size: 30px;
@@ -332,7 +369,6 @@ h2 {
 				font-size: 20px;
 			}
 		}
-	
 	}
 }
 @media (min-width: 1200px) {

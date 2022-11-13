@@ -201,6 +201,45 @@ h2 {
   text-decoration: none;
 }
 
+.team {
+  position: relative;
+  background-image: url(../img/team/sala-small.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+.team h2 {
+  color: white;
+}
+.team .shadow-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  z-index: -5;
+}
+.team .card {
+  transition: transform 0.3s;
+}
+.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .card i {
+  padding: 10px;
+}
+.team .card .card-title {
+  margin: 10px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.team .card:hover {
+  transform: scale(0.96);
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 50px;
