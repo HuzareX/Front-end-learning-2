@@ -236,8 +236,28 @@ h2 {
   text-transform: uppercase;
   text-align: center;
 }
+.team .card .card-body {
+  height: 160px;
+}
 .team .card:hover {
   transform: scale(0.96);
+}
+
+.achievments {
+  background-color: rgb(255, 255, 255);
+}
+.achievments i {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px black;
+  font-size: 30px;
+  padding: 20px 0;
+}
+.achievments .achievment-number {
+  font-weight: bold;
+  font-size: 25px;
+}
+.achievments .achievment-text {
+  text-transform: uppercase;
 }
 
 @media (min-width: 375px) {

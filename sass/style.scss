@@ -283,11 +283,36 @@ h2 {
 			text-transform: uppercase;
 			text-align: center;
 		}
+		.card-body {
+			height: 160px;
+		}
 	}
 
 	.card:hover {
 		transform: scale(.96);
 	}
+
+
+}
+
+.achievments {
+	background-color: rgb(255, 255, 255);
+	i {
+		color:rgb(255, 255, 255);
+		text-shadow: 0 0 5px black;
+		font-size: 30px;
+		padding: 20px 0;
+	}
+
+	.achievment-number {
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+	.achievment-text {
+		text-transform: uppercase;
+	}
+
 }
 
 @media (min-width: 375px) {
