@@ -271,7 +271,6 @@ h2 {
 		img {
 			height: 300px;
 			object-fit: cover;
-
 		}
 
 		i {
@@ -289,16 +288,59 @@ h2 {
 	}
 
 	.card:hover {
-		transform: scale(.96);
+		transform: scale(0.96);
 	}
+}
 
+.contact-us {
+	position: relative;
+	background-image: url(../img/katowice-small.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
 
+	.shadow-bg {
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.8);
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: -5;
+	}
+	h2 {
+		color: whitesmoke;
+	}
+	.contact-links {
+		h3 {
+			color: whitesmoke;
+			text-transform: uppercase;
+		}
+		i {
+			color: rgb(0, 0, 0);
+			font-size: 30px;
+			padding: 20px;
+			text-shadow: 0 0 5px rgb(255, 255, 255);
+			transition: all 0.5s;
+		}
+		i:hover {
+			font-size: 40px;
+			color: aqua;
+			text-shadow: 0 0 20px white;
+		}
+	}
+	.contact-item {
+		color: whitesmoke;
+		text-transform: uppercase;
+
+	}
 }
 
 .achievments {
 	background-color: rgb(255, 255, 255);
 	i {
-		color:rgb(255, 255, 255);
+		color: rgb(255, 255, 255);
 		text-shadow: 0 0 5px black;
 		font-size: 30px;
 		padding: 20px 0;
@@ -312,7 +354,6 @@ h2 {
 	.achievment-text {
 		text-transform: uppercase;
 	}
-
 }
 
 @media (min-width: 375px) {
@@ -394,6 +435,9 @@ h2 {
 				font-size: 20px;
 			}
 		}
+		.contact-us {
+			background-image: url(../img/katowice-big.jpg);
+	}
 	}
 }
 @media (min-width: 1200px) {
