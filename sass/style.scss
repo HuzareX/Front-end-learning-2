@@ -1,4 +1,5 @@
 @use '../sass/colors' as color;
+@import 'animate';
 
 *,
 *::before,
@@ -302,7 +303,7 @@ h2 {
 
 	.shadow-bg {
 		position: absolute;
-		background-color: rgba(0, 0, 0, 0.8);
+		background-color: rgba(0, 13, 83, 0.8);
 		height: 100%;
 		width: 100%;
 		top: 0;
@@ -310,11 +311,11 @@ h2 {
 		z-index: -5;
 	}
 	h2 {
-		color: whitesmoke;
+		color:rgb(255, 255, 255);
 	}
 	.contact-links {
 		h3 {
-			color: whitesmoke;
+			color: rgb(255, 255, 255);
 			text-transform: uppercase;
 		}
 		i {
